@@ -1,0 +1,7 @@
+<IfModule mod_headers.c>
+    # Correct redirect syntax - relative path
+    Redirect 301 /day-13/day-13/test.html http://www.google.com
+
+    # Correct Content Security Policy for external scripts
+    Header set Content-Security-Policy "script-src 'self' https://cdn.jsdelivr.net https://ajax.googleapis.com https://code.jquery.com https://cdnjs.cloudflare.com;"
+</IfModule>
